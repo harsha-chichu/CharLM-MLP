@@ -12,21 +12,22 @@ This project explores building a **character-level language model**, starting fr
 ---
 
 ## 📌 What I Did
-1. Implemented a **Bigram language model** as a baseline.  
+1. Implemented a **Bigram language model** (context size = 1) as a baseline.  
    - Achieved ~2.4 loss on training.  
-2. Implemented an **MLP-based language model**, following Bengio et al. (2003).  
-   - Used embeddings, hidden layers, and non-linear activations.  
-   - Achieved significantly **lower loss than Bigram** (showing better ability to model character dependencies).  
+2. Implemented an **MLP-based language model** (context size = 3), following Bengio et al. (2003).  
+   - Used embeddings, hidden layers, and non-linear activations.
+   - Leveraged a wider context window to capture richer character dependencies.  
+   - Achieved ~2.1 loss **lower loss than Bigram** (showing better ability to model character dependencies).  
 3. Compared the two approaches and demonstrated how neural networks improve over n-gram based models.  
 
 ---
 
 ## 📊 Results
 
-| Model   | Description                                | Final Training Loss |
-|---------|--------------------------------------------|----------------------|
-| Bigram  | Predicts next char using only the previous | ~2.4                |
-| MLP     | Embeddings + hidden layer (Bengio-style)   | ~2.1 **Lower than Bigram** |
+| Model   | Context Size | Description                                | Final Training Loss |
+|---------|--------------|--------------------------------------------|----------------------|
+| Bigram  | 1            | Predicts next char using only the previous | ~2.4                |
+| MLP     | 3            | Embeddings + hidden layer (Bengio-style)   | ~2.1                |
 
 The MLP clearly outperforms the Bigram model, proving that neural networks can generalize dependencies beyond adjacent characters.
 
