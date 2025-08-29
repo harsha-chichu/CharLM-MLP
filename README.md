@@ -7,7 +7,7 @@ This project explores building a **character-level language model**, starting fr
 ---
 
 ## 🔗 Related Work
-- **Bigram baseline implementation**: [Bigram-nn Repo]((https://github.com/harsha-chichu/Bigram-nn))
+- **Bigram baseline implementation**: [Bigram-nn Repo](https://github.com/harsha-chichu/Bigram-nn)
 
 ---
 
