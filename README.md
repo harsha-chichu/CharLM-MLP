@@ -43,7 +43,7 @@ jhavi
 wanell
 ```
 
-These samples show the model’s ability to produce coherent, name-like outputs — a clear improvement over the often fragmented Bigram outputs.
+These samples show the model’s ability to produce coherent, name-like outputs - a clear improvement over the often fragmented Bigram outputs.
 
 ---
 
